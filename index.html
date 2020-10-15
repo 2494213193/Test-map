@@ -47,7 +47,8 @@
       // マーカーを設置
       var marker = new google.maps.Marker({
         position: lat_lng,
-        map: map
+        map: map,
+        title: e.latLng.toString()
       });
 
       // 座標の中心をずらす
