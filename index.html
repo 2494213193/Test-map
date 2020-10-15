@@ -20,8 +20,8 @@
 <body>
   <div id="map"></div>
   <ul>
-    <li>lat: <span id+="lat"></span></li>
-    <li>lng: <span id+="lng"></span></li>
+    <li>lat: <span id="lat"></span></li>
+    <li>lng: <span id="lng"></span></li>
   </ul>
   <script>
     function initMap() {
@@ -43,6 +43,7 @@
       // 座標を表示
       document.getElementById('lat').textContent = lat_lng.lat();
       document.getElementById('lng').textContent = lat_lng.lng();
+      GLog.write(lat_lng.toString());
 
       // マーカーを設置
       var marker = new google.maps.Marker({
