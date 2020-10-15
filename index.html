@@ -43,7 +43,7 @@
       // 座標を表示
       document.getElementById('lat').textContent = lat_lng.lat();
       document.getElementById('lng').textContent = lat_lng.lng();
-      GLog.write(lat_lng.toString());
+      GLog.write('lat'+","+'lng'));
 
       // マーカーを設置
       var marker = new google.maps.Marker({
