@@ -20,8 +20,8 @@
 <body>
   <div id="map"></div>
   <ul>
-    <li>lat: <span id="lat"></span></li>
-    <li>lng: <span id="lng"></span></li>
+    <li>lat: <span id+="lat"></span></li>
+    <li>lng: <span id+="lng"></span></li>
   </ul>
   <script>
     function initMap() {
@@ -51,7 +51,6 @@
       });
 
       // 座標の中心をずらす
-      // http://syncer.jp/google-maps-javascript-api-matome/map/method/panTo/
       map.panTo(lat_lng);
     }
   </script>
