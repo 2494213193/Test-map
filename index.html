@@ -16,10 +16,10 @@
     <ul>
      <li>
        <label>以下の地図上をクリックして、避難経路に沿ってピンを立ててください.</label>
-       <input type="text" name="entry.1323365906" value="選択されていません" readonly required/>
+       <input type="text" id="copyTarget" name="entry.1323365906" value="選択されていません" readonly required/>
      </li>
     </ul>
-    <!-- <button type="submit">回答を送信</button>  -->
+    <button onclick="copyToClipboard()">コピーする</button>
   </form>
 	
  <div id="area-selection">	
@@ -31,7 +31,7 @@
         <option value="sionasi">塩成</option>
       </select>
       <input type="button" value="決定" onclick="calcBmi();">  <!--style="width:200px; height:52px; position:relative;"-->
-      <!-- <input type="button" value="やり直す" onclick="calcBmi();">  -->
+      
     </form>
   </div>
 	
@@ -47,6 +47,22 @@
     <input type="button" value="避難経路を保存" onclick="save();">  <!--style="width:200px; height:52px; position:relative; top:120px;"-->
   </div>
 
+	
+　<script>
+        function copyToClipboard() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyTarget");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+            // コピーをお知らせする
+            alert("コピーできました！ : " + copyTarget.value);
+        }
+    </script>　
   <script src="//maps.google.com/maps/api/js?key=AIzaSyBmGlUg-_VJxe_x8HCVnJAZoJPFy1tirQ4&callback=initMap" async defer></script>
   <script src="./map.js"></script>
 </body>
