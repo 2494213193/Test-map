@@ -17,12 +17,12 @@
 
   function calcBmi(){
 	var place = document.getElementById('place').value;
-	if(place == 'yawatahama'){
-	   move(33.462899,132.423363);
-        }else if(place=='minatoura'){
-           move(33.488573,132.354165);   
-	}else if(place=='sionasi'){
-           move(33.443015,132.258223); 
+	if(place == 'Seenigama'){
+	   move(6.158023694480074, 80.09944740045268);
+        }else if(place=='Rathgama'){
+           move(6.094113067712668, 80.14460119177627);   
+	}else if(place=='Dadalla'){
+           move(6.05061027710379, 80.20185262870272); 
         }
   }
 
@@ -33,7 +33,7 @@
       // マップの初期化
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
-        center: {lat:33.462899, lng: 132.423363},
+        center: {lat:6.05061027710379, lng: 80.20185262870272},
 	clickableIcons: false,
       });
 
