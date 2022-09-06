@@ -14,8 +14,8 @@
 <body>
   <form id = "path">
        <label>Click on the map below and stand up a pin along the evacuation route.</label>
-       <input type="text" id="copyTarget" name="entry.1323365906" value="選択されていません" readonly required/>
-    <button onclick="copyToClipboard()">コピーする</button>
+       <input type="text" id="copyTarget" name="entry.1323365906" value="No selections" readonly required/>
+    <button onclick="copyToClipboard()">Copy</button>
   </form>
 	
  <div id="area-selection">	
@@ -35,12 +35,12 @@
 
   <div id="area-result">
     <ul>  <!--style="position:relative; top:90px;"-->
-      <li><b>ポイント数: </b><span id="cnt"></span></li>
-      <li><b>緯度: </b><span id="lat"></span></li>
-      <li><b>経度: </b><span id="lng"></span></li>
+      <li><b>number of the point: </b><span id="cnt"></span></li>
+      <li><b>latitude: </b><span id="lat"></span></li>
+      <li><b>longitude: </b><span id="lng"></span></li>
     </ul>
 
-    <input type="button" value="避難経路を保存" onclick="save();">  <!--style="width:200px; height:52px; position:relative; top:120px;"-->
+    <input type="button" value="save evacuation route" onclick="save();">  <!--style="width:200px; height:52px; position:relative; top:120px;"-->
   </div>
 
 	
