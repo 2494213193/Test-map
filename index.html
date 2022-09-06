@@ -15,7 +15,7 @@
   <form id = "path">
        <label>Click on the map below and stand up a pin along the evacuation route.</label>
        <input type="text" id="copyTarget" name="entry.1323365906" value="No selections" readonly required/>
-    <button onclick="copyToClipboard()">copyToClipboard()</button>
+    <button onclick="Copy">Copy</button>
   </form>
 	
  <div id="area-selection">	
@@ -56,7 +56,7 @@
             document.execCommand("Copy");
 
             // コピーをお知らせする
-            alert("コピーできました！　元のページに戻って回答を貼り付けしてください。");
+            alert("Copied！　Please paste those details on Google form and Go back to the map ");
         }
     </script>　
   <script src="//maps.google.com/maps/api/js?key=AIzaSyBmGlUg-_VJxe_x8HCVnJAZoJPFy1tirQ4&callback=initMap" async defer></script>
