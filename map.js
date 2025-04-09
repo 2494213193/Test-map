@@ -33,7 +33,7 @@
       // マップの初期化
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 17,
-        center: {lat:6.05061027710379, lng: 80.20185262870272},
+        center: {lat:6.7059876442864, lng: 80.38543545988964},
 	clickableIcons: false,
       });
 
