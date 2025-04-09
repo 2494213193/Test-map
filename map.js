@@ -17,12 +17,12 @@
 
   function calcBmi(){
 	var place = document.getElementById('place').value;
-	if(place == 'Seenigama'){
-	   move(6.158023694480074, 80.09944740045268);
-        }else if(place=='Rathgama'){
-           move(6.094113067712668, 80.14460119177627);   
-	}else if(place=='Dadalla'){
-           move(6.05061027710379, 80.20185262870272); 
+	if(place == 'Ratnapura Town'){
+	   move(6.709235670946628, 80.38703870151073);
+        }else if(place=='Kahawatta'){
+           move(6.581756848155853, 80.57559512509314);  
+	}else if(place=='Kahangama'){
+           move(6.701157994864895, 80.36332051292162); 
         }
   }
 
